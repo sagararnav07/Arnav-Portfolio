@@ -64,7 +64,7 @@ const Hero = () => {
       >
         {/* Twitter */}
         <motion.a
-          href="https://twitter.com/yourprofile"
+          href="https://x.com/arnav_sagar07"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -75,7 +75,7 @@ const Hero = () => {
 
         {/* GitHub */}
         <motion.a
-          href="https://github.com/yourprofile"
+          href="https://github.com/sagararnav07"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -86,7 +86,7 @@ const Hero = () => {
 
         {/* Facebook */}
         <motion.a
-          href="https://facebook.com/yourprofile"
+          href="https://www.facebook.com/arnav.sagar.50"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -97,7 +97,7 @@ const Hero = () => {
 
         {/* LinkedIn */}
         <motion.a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/arnav-sagar-88b03a291/"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -108,7 +108,7 @@ const Hero = () => {
 
         {/* Hashnode */}
         <motion.a
-          href="https://hashnode.com/@yourprofile"
+          href="https://hashnode.com/@Arnav07"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -116,6 +116,27 @@ const Hero = () => {
         >
           <FontAwesomeIcon icon={faHashnode} size="2x" />
         </motion.a>
+        <motion.a
+        href="https://drive.google.com/file/d/1DDM_g1YbylTEe4jdXpu4DdEeDqu990hU/view?usp=sharing" // The link to redirect
+        target="_blank"
+        rel="noopener noreferrer"
+        className="redirect-link"
+        initial={{ opacity: 0, x: 100 }} // Start slightly off-screen
+        animate={{ opacity: 1, x: 0 }}   // Fade and slide in
+        transition={{ duration: 1 }}
+        whileHover={{ scale: 1.2 }} // Add hover effect
+        style={{
+          position: "absolute",
+          cursor: "pointer",
+          marginLeft:"600px",
+          top:"185px"
+          
+        }}
+        >
+          {/* Use any image as a logo */}
+          <img src="/CV.png" alt="Logo" style={{ width: "60px", height: "60px" }} /> {/* Adjust the size */}
+        </motion.a>
+  
       </motion.div>
           <motion.div
       initial={{ opacity: 0, x: -100 }} // Start with 0 opacity and slightly off-screen to the left
@@ -149,7 +170,7 @@ I am eager to bring my skills, creativity, and technical acumen to your organiza
        PROGRAMMER, CREATOR, OPEN SOURCE CONTRIBUTOR
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/You.png" alt="" />
       </div>
     </div>
     
@@ -157,4 +178,3 @@ I am eager to bring my skills, creativity, and technical acumen to your organiza
 };
 
 export default Hero;
-

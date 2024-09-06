@@ -29,13 +29,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
-        formRef.current,
-        "pX_2hasGmGcuvjXIW"
-      )
+    emailjs.sendForm( "service_wfv1h8o", "template_h6rnimq",formRef.current,"C-lyNEbeIZzw54PxP" )
       .then(
         (result) => {
           setSuccess(true)
@@ -58,7 +52,7 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>arnav.07@gmail.com</span>
+          <span>arnav.07.sagar@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>

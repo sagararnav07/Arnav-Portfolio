@@ -1,7 +1,12 @@
 @import "../../app.scss";
+
 .experience {
   padding: 20px;
   font-family: 'Roboto', sans-serif; /* Use a modern, clean font */
+  
+  @include mobile {
+    padding: 10px;
+  }
 }
 
 .textContainer .sectionTitle {
@@ -9,58 +14,107 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 20px;
+
+  @include mobile {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
 }
 
 .experienceContainer {
   margin-top: 20px;
+
+  @include mobile {
+    margin-top: 15px;
+  }
 }
 
 .experienceItem {
-  background-color: #f9f9f9; /* Light background */
+  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
-  border-left: 5px solid #ffa500; /* Orange left border for style */
+  border-left: 5px solid #ffa500;
+  
+  @include mobile {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 .experienceHeader {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .companyLogo {
   width: 100px;
   height: 100px;
   margin-right: 15px;
+
+  @include mobile {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .jobTitle {
   font-size: 1.5rem;
   font-weight: 700;
+
+  @include mobile {
+    font-size: 1.3rem;
+  }
 }
 
 .companyName {
   font-size: 1.2rem;
   color: #666;
+
+  @include mobile {
+    font-size: 1rem;
+  }
 }
 
 .duration {
   font-size: 1rem;
   color: #999;
+
+  @include mobile {
+    font-size: 0.9rem;
+  }
 }
 
 .experienceDetails {
   list-style-type: disc;
   padding-left: 20px;
-  font-style:italic;
-  color: #666  ;
+  font-style: italic;
+  color: #666;
   font-weight: 900;
+
+  @include mobile {
+    padding-left: 15px;
+
+  }
 }
 
 .experienceDetails li {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 10px;
+
+  @include mobile {
+    font-size: 0.7rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
 }

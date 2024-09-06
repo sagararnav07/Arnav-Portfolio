@@ -43,7 +43,7 @@ const Experience = () => {
       <motion.div className="experienceContainer" variants={variants}>
         <div className="experienceItem">
           <div className="experienceHeader">
-          <img src="public/code 4 gov tech.png" alt="Code for GovTech" className="companyLogo" />
+          <img src="/code 4 gov tech.png" alt="Code for GovTech" className="companyLogo" />
             <div>
               <h1 className="jobTitle">DevOps Intern</h1>
               <h2 className="companyName">@ Code for GovTech | Open Source Dev</h2>
@@ -61,7 +61,7 @@ const Experience = () => {
              
         <div className="experienceItem">
           <div className="experienceHeader">
-            <img src="public/Github.png" alt="GitHub" className="companyLogo" />
+            <img src="/Github.png" alt="GitHub" className="companyLogo" />
             <div>
               <h1 className="jobTitle">Open Source Contributor</h1>
               <h2 className="companyName">@ GitHub</h2>
