@@ -5,6 +5,7 @@ import Cursor from "./components/cursor/Cursor";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
+import Skills from "./components/Skills/Skills";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 
@@ -25,13 +26,14 @@ const App = () => {
         <Services />
       </section>
 
-      
+      <section id="Skills">
+          <Skills type = "Skills"/>
+      </section>
+      <Skills/>
+
       <section id="Portfolio">
         <Parallax type="portfolio" />
       </section>
-
-      
-
       <Portfolio />
 
       <section id="Contact">
